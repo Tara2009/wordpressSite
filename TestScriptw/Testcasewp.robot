@@ -9,6 +9,6 @@ Suite Teardown    End suite
 *** Test Cases ***
 Open wordpress website
     [Tags]        commitment
-    #Appstate      Home
+    Appstate      Home
     ${headertext}=    GetText    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size']
     Log               ${headertext}

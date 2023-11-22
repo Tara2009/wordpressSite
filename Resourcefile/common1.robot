@@ -9,7 +9,7 @@ Library                         String
 ${BROWSER}                      chrome
 ${username}                     tarasrinivas50@brave-wolf-hcwlsf.com
 ${login_url}                    https://kuchifamily.in/    # Salesforce instance. NOTE: Should be overwritten in CRT variables
-${home_url}                     ${login_url}/lightning/page/home
+${home_url}                     https://kuchifamily.in
 
 
 *** Keywords ***

@@ -1,5 +1,5 @@
 *** Settings ***
-#Library                         QForce
+Library                         QForce
 Library                         QWeb
 Library                         String
 
@@ -8,7 +8,7 @@ Library                         String
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
 ${BROWSER}                      chrome
 ${username}                     tarasrinivas50@brave-wolf-hcwlsf.com
-${login_url}                    https://kuchifamily.in/    # Salesforce instance. NOTE: Should be overwritten in CRT variables
+${login_url}                    https://kuchifamily.in/     # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${home_url}                     https://kuchifamily.in
 
 
@@ -16,7 +16,7 @@ ${home_url}                     https://kuchifamily.in
 Setup Browser
     # Setting search order is not really needed here, but given as an example
     # if you need to use multiple libraries containing keywords with duplicate names
-    Set Library Search Order                       QWeb
+    Set Library Search Order    QWeb                        QForce
     Open Browser                about:blank                 ${BROWSER}
     SetConfig                   LineBreak                   ${EMPTY}                    #\ue000
     SetConfig                   DefaultTimeout              20s                         #sometimes salesforce is slow

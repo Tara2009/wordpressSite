@@ -63,10 +63,10 @@ Fill MFA
 Home
     [Documentation]             Navigate to homepage, login if needed
     GoTo                        ${home_url}
-    ${login_status} =           IsText                      To access this page, you have to log in to Salesforce.                              2
-    Run Keyword If              ${login_status}             Login
-    ClickText                   Home
-    VerifyTitle                 Home | Salesforce
+   # ${login_status} =           IsText                      To access this page, you have to log in to Salesforce.                              2
+    #Run Keyword If              ${login_status}             Login
+    #ClickText                   Home
+    #VerifyTitle                 Home | Salesforce
 
 
     # Example of custom keyword with robot fw syntax

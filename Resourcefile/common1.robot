@@ -1,5 +1,5 @@
 *** Settings ***
-Library                         QForce
+#Library                         QForce
 Library                         QWeb
 Library                         String
 
@@ -16,7 +16,7 @@ ${home_url}                     https://kuchifamily.in
 Setup Browser
     # Setting search order is not really needed here, but given as an example
     # if you need to use multiple libraries containing keywords with duplicate names
-    Set Library Search Order    QForce                      QWeb
+    Set Library Search Order                       QWeb
     Open Browser                about:blank                 ${BROWSER}
     SetConfig                   LineBreak                   ${EMPTY}                    #\ue000
     SetConfig                   DefaultTimeout              20s                         #sometimes salesforce is slow

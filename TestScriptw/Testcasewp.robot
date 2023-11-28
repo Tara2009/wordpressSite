@@ -11,4 +11,6 @@ Open wordpress website
     [Tags]        commitment
     Appstate      Home
     ${headertext}=    GetText    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size']
+    ${headertext1}=   GetText    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size1']
     Log               ${headertext}
+    Log               ${headertext1}

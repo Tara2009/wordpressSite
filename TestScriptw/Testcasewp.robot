@@ -14,8 +14,10 @@ Open wordpress website
     #${headertext1}=   GetText    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size1']
     #${headertext}=    IsElement    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size']
     #${headertext1}=   IsElement    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size1']
-    ${headertext}=      IsElement    //h1[@class\='post-title entry-title']
-    ${headertext1}=      IsElement    //h1[@class\='post-title entry-title1']
+    
+    # Verifying component is available in the page or not, if available return True or if not available return false
+    ${headertext}=      IsElement    //h1[@class\='post-title entry-title1']
+    ${headertext1}=      IsElement    //h1[@class\='post-title entry-title']
     Log               ${headertext}
     Log               ${headertext1}
     

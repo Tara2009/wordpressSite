@@ -8,8 +8,8 @@ Library                         String
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
 ${BROWSER}                      chrome
 ${username}                     tarasrinivas50@brave-wolf-hcwlsf.com
-${login_url}                    https://kuchifamily.in/     # Salesforce instance. NOTE: Should be overwritten in CRT variables
-${home_url}                     https://kuchifamily.in
+${login_url}                    https://www.hyrtutorials.com/      #https://kuchifamily.in/     # Salesforce instance. NOTE: Should be overwritten in CRT variables
+${home_url}                     https://www.hyrtutorials.com           #https://kuchifamily.in
 
 
 *** Keywords ***

@@ -14,7 +14,7 @@ Open wordpress website
     #${headertext1}=   GetText    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size1']
     #${headertext}=    IsElement    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size']
     #${headertext1}=   IsElement    //h1[@class\='wp-block-heading has-text-align-center has-x-large-font-size1']
-    ${headertext}=      IsElement    //h1[@class='post-title entry-title']
-    ${headertext1}=      IsElement    //h1[@class='post-title entry-title1']
+    ${headertext}=      IsElement    //h1[@class\='post-title entry-title']
+    ${headertext1}=      IsElement    //h1[@class\='post-title entry-title1']
     Log               ${headertext}
     Log               ${headertext1}
